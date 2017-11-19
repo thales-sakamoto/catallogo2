@@ -38,7 +38,7 @@ def register_produto():
     telefone = request.form['telefone']
     cep = request.form['cep']
     imagem = request.files['imagem']
-    content = StringIO(imagem.read())
+    content = BytesIO(imagem.read())
     content = bson.binary.Binary(content.getvalue())
     Produto2 = Produto(nome, descricao, email, telefone, cep, content, _id=None)
     Produto2.save_to_mongo()
