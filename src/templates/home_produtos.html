@@ -1,0 +1,24 @@
+<style>
+    .container2 {
+    margin-top: 100px;
+    }
+</style>
+
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+<div class="container2">
+    {% if posts|length > 0 %}
+        {% for post in posts %}
+          <div class="well">
+            <h2>
+                <a href="{{ url_for('produto', key=post._id) }}"> {{ post.nome }} - {{ post.descricao }} </a>
+            </h2>
+          </div>
+        {% endfor %}
+    {% else %}
+        <h4>There aren't any posts yet!</h4>
+    {% endif %}
+</div>
+</div>
+{% endblock %}

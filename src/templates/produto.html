@@ -1,0 +1,6 @@
+ <div class="top-pad">
+ <h1>{{ product['nome'] }}
+ <small>{{ product['descricao'] }}</small>
+ </h1>
+     <img src="{{ url_for('imagem', key=product['_id']) }}" alt={{ product['descricao'] }}>
+ </div>

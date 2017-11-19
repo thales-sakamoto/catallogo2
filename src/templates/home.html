@@ -1,0 +1,96 @@
+<style>
+    .jumbotron {
+      background-color: #009933;
+      color: #fff;
+      padding: 50px 25px;
+    }
+    .logo-small {
+    color: #0A2134;
+    font-size: 75px;
+    }
+
+    .logo {
+    color: #2984CE;
+    font-size: 200px;
+    }
+    .row{
+    background-color: #FFFFFF;
+    }
+
+    @media screen and (max-width: 384px) {
+    .col-sm-4 {
+      display: block;
+      margin: auto;
+      width: 20%;
+    }
+    }
+
+</style>
+
+{% extends 'base.html' %}
+{% block content %}
+
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Catallogo</h1>
+  <p>É um projeto que visa facilitar o descarte e o reaproveitamento de produtos eletroeletrônicos através de meios digitas</p>
+</div>
+
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h3><strong>Quem Somos</strong></h3>
+      <h4>Estudantes do curso de engenharia de produção da ESEG (Escola Superior de Engenharia de gestão).</h4>
+
+      <h3><strong>Nossa Missão</strong></h3>
+      <h4>Ser uma ferramenta de referência brasileira na área de Logística Reversa de
+aparelhos eletroeletrônicos.</h4>
+
+    </div>
+    <div class="col-sm-4">
+      <img src="https://lh3.googleusercontent.com/YKfjxdIZjoc1G4s2amlipxknzGvG9nTlQuZvgSf6wtbwtTZ3qxJy9zZkohhOJ5nCWB998yXnHkjbRkWzDOOrSP5QlcvUozZJVFR7tEnW3MT0oca9YFmPPegtjp1j4zcBUZBF_s-6zdc34Bcw-4M3-ZjS-KRevFYwyO4zasUycn8eYVrXlz3gnc0ai2Ftd2N5QkL4PgQHCIa_EzIMuh16Mb3Qco-JCGUGXWhsR0RNM4KC8yrLnZ-Umxvwq3EjFcYiCYv05JZHgSJvsnrUeVzfYDTbWTu0mjoDIytvMuIBJnNMutsR9qv-vzoGf_oBHeR9c_2s5c4GHX-IjkJjMThMAYzzFq2oPR8iz0S-BMzhs7BPByQEeBxC-1oq-eKB02_u-YKkWOpH56og0_QrmaUvqGq-kFKu1mKD2JRWiOtHLwHKiDbNCjsnr8wVzNKRY1ixzBXa5_TStDOK1Snae6OBMkjX-cj_17Gg_ZGAsXO7wUITYf0cHb_1eEOhuCCcj0QfNPJNFq7ozn9aNszdPfUIjcqckYjGkag8SN8Jc3hslTi_5v8dqtlG4J9xxRpbJY5FQUPQEyhkuJhTqKrENbYa8gDPnXazZ2eZwZy6ZLKAEA=w512-h588-no" alt="QuemSomos" align="left">
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid text-center">
+  <h2><strong>O que é Logística Reversa?</strong></h2>
+  <br>
+  <div class="row">
+      <h4>Definido pela Lei 12.305/10 a logística reversa atua como "instrumento de desenvolvimento econômico e social caracterizado por um conjunto de ações, procedimentos e meios destinados a viabilizar a coleta e a restituição dos resíduos sólidos ao setor empresarial, para reaproveitamento, em seu ciclo ou em outros ciclos produtivos, ou outra destinação final ambientalmente adequada"</h4>
+      <h4>O processo da logística reversa responsabiliza as empresas e estabelece uma integração de municípios na gestão do lixo. Neste processo, os produtores de um eletroeletrônico, por exemplo, têm que prever como sedará a devolução, a reciclagem daquele produto e a destinação ambiental adequada, especialmente dos que eventualmente poderão retornar o ciclo produtivo</h4>
+      <h4>A gestão inadequada do lixo gera inúmeros danos ambientais que comprometem seriamente a qualidade de vida, tais como: a emissão de gases nocivos pela putrefação; descarte em galerias pluviais provocando alagamentos e inundações; depósito em áreas de preservação ambiental que contaminam o solo e poluem as águas superficiais e subterrâneas; disposição inadequada que contribui para transmissão de doenças; entre tantos outros.</h4>
+  </div>
+</div>
+
+<div class="container-fluid text-center">
+  <h2><strong>Nossos Valores</strong></h2>
+  <h4>O que nos orienta?</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+      <h4>Ética</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-search logo-small"></span>
+      <h4>Transparência</h4>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+      <h4>Segurança</h4>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock %}
+
