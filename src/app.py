@@ -60,4 +60,5 @@ def initialize_database():
     Database.initialize()
 
 if __name__ == '__main__':
+    app.debug = True
     app.run(port=4995, debug=True)
