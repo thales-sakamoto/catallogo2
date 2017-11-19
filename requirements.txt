@@ -5,3 +5,4 @@ requests==2.8.0
 ccy
 Werkzeug==0.11.10
 uwsgi
+bson
