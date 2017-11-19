@@ -5,7 +5,7 @@ from src.common.database import Database
 
 from io import BytesIO
 import bson.binary
-from cStringIO import StringIO
+from io import StringIO
 from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
