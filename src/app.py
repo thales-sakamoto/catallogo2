@@ -7,9 +7,14 @@ from io import BytesIO
 import bson.binary
 from io import StringIO
 from flask import Flask, render_template, request, session
+import sys
+import logging
 
 app = Flask(__name__)
 app.secret_key = '123456'
+
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 @app.route('/')
 def home_template():
